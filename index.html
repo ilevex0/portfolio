@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pedro</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="#home" class="nav-logo">P.</a>
+                <ul class="ul-container">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+            <hr />
+        </nav>
+    </header>
+    <main id="home">
+        <section id="projetos" class="section-projects">
+            <h1 class="section-projects-title">Meus principais projetos</h1>
+            <div class="articles-projects">
+                <article>
+                    <a href="https://mercadinho-vue.vercel.app" target="_blank"><img src="imgs/projetos/projeto1.png" alt="Site clone da amazon" class="projeto-img"></a>
+                    <div class="projeto-info">
+                        <h2 class="project-title">Clone da Amazon</h2>
+                        <ul class="tags-container">
+                            <li class="button-tags">Front-end</li>
+                            <li class="button-tags">Vue.js</li>
+                        </ul>
+                        <p class="project-description">Focado em Front-end, Possui Sistema de carrinho com Local Storage, Página de produto, Compartilhar Link de produto, Consumo de API no GitHub Gist, Validação Simples de formulário, utiliza Vue.js.</p>
+                        <div class="links-container">
+                            <div class="button">
+                                <a href="https://mercadinho-vue.vercel.app" target="_blank" class="links"><img class="link-logos" src="imgs/logos/vercel.png" alt="Vercel"></a>
+                            </div>
+                            <div class="button">
+                                <a href="https://github.com/ilevex0/mercadinho-vue" target="_blank" class="links"><img class="link-logos" src="imgs/logos/github.png" alt="GitHub"></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="section-contact-container" id="contato">
+            <h1 class="section-projects-title">Entre em contato!</h1>
+            <p>Use o formulário abaixo ou, se preferir, envie-me um e-mail diretamente.</p>
+            <form action="https://api.web3forms.com/submit" method="POST" class="form-container">
+                <input type="hidden" name="access_key" value="FALTA A KEY AQUI">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required placeholder="Seu Nome">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Seu Email">
+
+                <label for="message">Sua mensagem</label>
+                <textarea id="message" name="message" required placeholder="Sua Mensagem"></textarea>
+                <button type="submit" class="button">Enviar Email</button>
+            </form>
+            <p>Ou envie para: <img src="imgs/logos/mail.svg" alt="Ícone de Email" class="nao-selecionavel mail-icon"><strong>contactilevex@gmail.com</strong></p>
+            <p>Ou me chame no&nbsp;<a href="https://www.linkedin.com/in/ilevex/" target="_blank" class="link-social-icons">Linkedin</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <a href="https://www.linkedin.com/in/ilevex/" target="_blank" class="link-social-icons"><img src="imgs/logos/linkedin.webp"></a>
+            <a href="https://github.com/ilevex0" target="_blank" class="link-social-icons"><img src="imgs/logos/github.webp"></a>
+        </div>
+        <p>&copy; 2026 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
